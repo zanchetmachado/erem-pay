@@ -1,6 +1,11 @@
-<form action="/processar_pagamento" method="POST">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+
+<form action="/processar-pagamento" method="POST">
   <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
+    src="https://www.mercadopago.com.br/integrations/v1/web-tokenize-checkout.js"
+    data-public-key="TEST-8ea6141c-2a03-4fff-8d77-424501f511b5"
+    data-transaction-amount="100.00">
   </script>
 </form>
